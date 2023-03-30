@@ -1,0 +1,6 @@
+@mixin goflex($justify: space-between, $align: center, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}

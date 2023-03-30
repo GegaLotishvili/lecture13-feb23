@@ -1,0 +1,8 @@
+.s-1 {
+    .container {
+        @extend %container;
+        @media (max-width: 1200px) {
+            width: 90%;
+        }
+    }
+}

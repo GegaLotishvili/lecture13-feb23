@@ -1,0 +1,38 @@
+header {
+    height: 80px;
+    background-color: $mycolor2;
+}
+.container {
+    height: 100%;
+    @include goflex;
+    @extend %container;
+    @media (max-width: 1200px) {
+        width: 90%;
+    }
+
+    & > .logo {
+        font-size: 50px;
+        color: black;
+        &:hover {
+            cursor: none;
+        }
+    }
+    nav {
+        width: 500px;
+        ul {
+            @include goflex;
+            li {
+                a {
+                    font-size: 20px;
+                    color: black;
+                    @media (max-width: $desktopsize) {
+                        font-size: 16px;
+                    }
+                    @media (max-width: $tabletsize) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
